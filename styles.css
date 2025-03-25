@@ -3,14 +3,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f9fa;
+    background-color: #c2d9f2;
     color: #333;
     text-align: center;
 }
 
 /* Header */
 header {
-    background-color: #737070;
+    background-color: #222;
     color: black;
     padding: 50px 20px;
 }
@@ -73,7 +73,7 @@ table, th, td {
 }
 
 th {
-    background-color: #007bff;
+    background-color: #c2d9f2;
     color: white;
 }
 
@@ -95,7 +95,7 @@ input, textarea {
 
 /* Button */
 button {
-    background-color: #007bff;
+    background-color: #c2d9f2;
     color: white;
     padding: 10px;
     border: none;
