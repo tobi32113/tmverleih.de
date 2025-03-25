@@ -5,21 +5,30 @@ body {
     padding: 0;
     background-color: #f8f9fa;
     color: #333;
+    text-align: center;
 }
 
 /* Header */
 header {
     background-color: #222;
     color: white;
-    text-align: center;
-    padding: 40px 20px;
+    padding: 50px 20px;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+.subheading {
+    font-size: 18px;
+    color: #bbb;
 }
 
 /* Navigation */
 nav {
     background-color: #007bff;
     padding: 10px 0;
-    text-align: center;
 }
 
 nav ul {
@@ -43,7 +52,7 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Container für Abschnitte */
+/* Container */
 .container {
     background: white;
     margin: 20px auto;
@@ -51,29 +60,9 @@ nav ul li a:hover {
     max-width: 800px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    text-align: center;
 }
 
-/* Bild */
-.main-image {
-    width: 100%;
-    border-radius: 10px;
-}
-
-/* Technische Details */
-.details-list {
-    list-style-type: none;
-    padding: 0;
-    text-align: left;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.details-list li {
-    padding: 8px 0;
-}
-
-/* Tabelle */
+/* Tabellen */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -82,11 +71,6 @@ table {
 
 table, th, td {
     border: 1px solid #ddd;
-}
-
-th, td {
-    padding: 12px;
-    text-align: center;
 }
 
 th {
@@ -110,13 +94,13 @@ input, textarea {
     border-radius: 5px;
 }
 
+/* Button */
 button {
     background-color: #007bff;
     color: white;
     padding: 10px;
     border: none;
     cursor: pointer;
-    font-size: 16px;
 }
 
 button:hover {
@@ -129,5 +113,4 @@ footer {
     padding: 10px;
     background: #222;
     color: white;
-    text-align: center;
 }
