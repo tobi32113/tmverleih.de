@@ -12,16 +12,36 @@ body {
 header {
     background-color: #303c80;
     color: black;
-    padding: 50px 20px;
+    padding: 30px 20px;
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: left;
+}
+
+header img {
+    height: 80px;
+    max-width: 100%;
+}
+
+header .text-block {
+    max-width: 600px;
 }
 
 .title {
     font-size: 32px;
     font-weight: bold;
+    margin: 0;
 }
 
 .subtitle {
     font-size: 20px;
+    margin-top: 10px;
 }
 
 /* Navigation */
