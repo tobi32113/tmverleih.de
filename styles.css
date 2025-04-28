@@ -10,7 +10,7 @@ body {
 
 /* Header */
 header {
-    background-color: #303c80;
+    background-color: #f2efe6;
     color: black;
     padding: 30px 20px;
 }
@@ -46,7 +46,7 @@ header .text-block {
 
 /* Navigation */
 nav {
-    background-color: #232b5c;
+    background-color: #ada692;
     padding: 10px 0;
 }
 
