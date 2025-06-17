@@ -642,7 +642,13 @@ body {
 }
 
 /* Footer */
+html, body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
 .footer {
+    margin-top: auto;
     background: var(--surface-dark);
     color: white;
     padding: 60px 0 40px;
