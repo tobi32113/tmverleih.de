@@ -110,14 +110,48 @@ body {
     width: 100%;
 }
 
-/* Hero Section */
 .hero {
     min-height: 100vh;
     display: flex;
     align-items: center;
     position: relative;
-    background: linear-gradient(135deg, rgba(245,245,247,0.6), rgba(255,255,255,0.6)), url('anhaenger.jpg') center center / cover no-repeat;
+    background: url('anhaenger.jpg') center center / cover no-repeat;
     overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(255, 255, 255, 0.6); /* weißer Schleier über dem Bild */
+    z-index: 1;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    z-index: 2; /* Damit der Text über dem Overlay liegt */
+}
+
+.hero-title {
+    font-size: clamp(48px, 8vw, 72px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle,
+.hero-description {
+    color: #000000; /* Deutlich besser lesbar als vorher */
 }
 
 .hero-content {
@@ -145,13 +179,13 @@ body {
 .hero-subtitle {
     font-size: 24px;
     font-weight: 500;
-    color: var(--text-secondary);
+    color: #000000(--text-secondary);
     margin-bottom: 20px;
 }
 
 .hero-description {
     font-size: 18px;
-    color: var(--text-secondary);
+    color: #000000(--text-secondary);
     margin-bottom: 40px;
 }
 
