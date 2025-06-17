@@ -1,219 +1,1244 @@
 <!DOCTYPE html>
-<html lang="de">
+<html>
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-ZDK3EKE0PT"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+<meta name="description" content="Motorradanhänger mieten in Husum – 100 km/h Zulassung, Platz für 1–2 Motorräder. Günstig, zuverlässig & sofort verfügbar.">
+<meta name="keywords" content="Motorradanhänger mieten, Anhängerverleih Husum, Motorradanhänger 100 km/h, Motorradanhänger Schleswig-Holstein, Anhängerverleih privat, Motorrad Transportanhänger, TM Verleih, Tobias Meyer">
+<meta name="author" content="Tobias Meyer">
+   <link rel="icon" type="image/png" href="favicon.png">
+   
+   <script src="https://static.elfsight.com/platform/platform.js" async></script>
 
-  gtag('config', 'G-ZDK3EKE0PT');
-</script>
-  <meta charset="UTF-8">
-  <title>Motorradanhänger mieten in Husum – TM Verleih</title>
-  <meta name="description" content="Motorradanhänger und Transportanhänger mieten in Husum – TÜV-geprüft, 100 km/h Zulassung, ideal für 1–2 Motorräder. Jetzt online anfragen bei TM Verleih.">
-  <meta name="keywords" content="Anhänger mieten Husum, Motorradanhänger Nordfriesland, Transportanhänger Schleswig-Holstein, Anhängerverleih Husum, PKW Anhänger leihen, TM Verleih, Anhängervermietung Husum">
-  <link rel="canonical" href="https://www.tmverleih.de/">
-  <link rel="stylesheet" href="styles.css">
+            <style>/* Apple-inspired Design System */
+:root {
+    --primary-blue: #007AFF;
+    --primary-purple: #5856D6;
+    --primary-pink: #FF2D92;
+    --primary-orange: #FF9500;
+    --text-primary: #1d1d1f;
+    --text-secondary: #86868b;
+    --surface-primary: #ffffff;
+    --surface-secondary: #f5f5f7;
+    --surface-dark: #1d1d1f;
+    --surface-dark-elevated: #2c2c2e;
+    --border-light: rgba(0,0,0,0.1);
+    --border-dark: rgba(255,255,255,0.1);
+    --shadow-light: 0 4px 20px rgba(0,0,0,0.08);
+    --shadow-heavy: 0 8px 40px rgba(0,0,0,0.12);
+    --gradient-blue: linear-gradient(135deg, #007AFF 0%, #5856D6 100%);
+    --gradient-purple: linear-gradient(135deg, #5856D6 0%, #FF2D92 100%);
+    --gradient-warm: linear-gradient(135deg, #FF9500 0%, #FF2D92 100%);
+    --gradient-cool: linear-gradient(135deg, #007AFF 0%, #00D4AA 100%);
+}
 
-  <!-- Favicon für Browser & Google -->
-  <link rel="icon" type="image/png" href="logo.png">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-  <!-- Strukturierte Daten für Google zur Logo-Erkennung -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "TM Verleih",
-    "url": "https://www.tmverleih.de",
-    "logo": "https://www.tmverleih.de/logo.png"
-  }
-  </script>
-</head>
-<body>
-  <header>
-    <div class="container">
-      <a href="index.html">
-        <img src="logo.png" alt="TM Verleih Logo">
-      </a>
-      <div class="text-block">
-        <h1 class="title">Motorradanhänger mieten in Husum – TM Verleih</h1>
-        <p class="subtitle">100 km/h Zulassung – Platz für 1–2 Motorräder</p>
-      </div>
+html {
+    scroll-behavior: smooth;
+}
+
+
+               
+            {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    line-height: 1.6;
+    color: var(--text-primary);
+    background-color: var(--surface-primary);
+    overflow-x: hidden;
+}
+
+/* Navigation */
+.nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--border-light);
+    z-index: 1000;
+    transition: all 0.3s ease;
+}
+
+.nav-bar.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: var(--shadow-light);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 600;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+.nav-menu a {
+    color: var(--text-primary);
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.nav-menu a:hover {
+    color: var(--primary-blue);
+}
+
+.nav-menu a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-blue);
+    transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+    width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+    background: linear-gradient(135deg, #f5f5f7 0%, #ffffff 100%);
+    overflow: hidden;
+}
+
+.hero-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+    z-index: 2;
+}
+
+.hero-title {
+    font-size: clamp(48px, 8vw, 72px);
+    font-weight: 700;
+    line-height: 1.1;
+    margin-bottom: 20px;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    margin-bottom: 20px;
+}
+
+.hero-description {
+    font-size: 18px;
+    color: var(--text-secondary);
+    margin-bottom: 40px;
+}
+
+.cta-button {
+    display: inline-block;
+    background: var(--gradient-blue);
+    color: white;
+    padding: 16px 32px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.cta-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.cta-button:hover::before {
+    left: 100%;
+}
+
+.hero-image {
+    position: relative;
+    z-index: 1;
+}
+
+.parallax-image {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: var(--shadow-heavy);
+    transition: transform 0.1s ease-out;
+}
+
+/* Sections */
+.section {
+    padding: 120px 0;
+    position: relative;
+}
+
+.dark-section {
+    background: var(--surface-dark);
+    color: white;
+    padding: 120px 0;
+    position: relative;
+}
+
+.dark-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-purple);
+    opacity: 0.05;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+    z-index: 2;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.section-title {
+    font-size: clamp(36px, 6vw, 56px);
+    font-weight: 700;
+    margin-bottom: 20px;
+    background: var(--gradient-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.dark-section .section-title {
+    background: var(--gradient-warm);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.dark-section .section-subtitle {
+    color: rgba(255,255,255,0.8);
+}
+
+/* Content Grid */
+.content-grid {
+    margin-bottom: 60px;
+}
+
+.content-text {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--text-secondary);
+}
+
+/* Features Grid */
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.feature-card {
+    background: var(--surface-primary);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: var(--gradient-cool);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover::before {
+    transform: scaleX(1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.feature-icon {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.feature-card h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.feature-card p {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+/* Additional Features */
+.additional-features {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+    background: var(--surface-secondary);
+    border-radius: 15px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: var(--surface-primary);
+    box-shadow: var(--shadow-light);
+}
+
+.checkmark {
+    font-size: 20px;
+    color: #34C759;
+}
+
+/* Pricing Grid */
+.pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.pricing-card {
+    background: var(--surface-dark-elevated);
+    padding: 40px 30px;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid var(--border-dark);
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.pricing-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-warm);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.pricing-card:hover::before {
+    opacity: 0.05;
+}
+
+.pricing-card.featured {
+    transform: scale(1.05);
+    background: var(--gradient-blue);
+    box-shadow: var(--shadow-heavy);
+}
+
+.popular-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: rgba(255,255,255,0.2);
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.pricing-card h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background: var(--gradient-warm);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.pricing-card.featured .price {
+    color: white;
+    background: none;
+    -webkit-text-fill-color: white;
+}
+
+.pricing-card p {
+    color: rgba(255,255,255,0.8);
+    margin-bottom: 30px;
+}
+
+.price-features {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.price-features span {
+    color: rgba(255,255,255,0.9);
+    font-size: 14px;
+}
+
+/* Extras Section */
+.extras-section {
+    margin-bottom: 60px;
+}
+
+.extras-section h3 {
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.extras-grid {
+    display: grid;
+    gap: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.extra-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+    background: var(--surface-dark-elevated);
+    border-radius: 15px;
+    border: 1px solid var(--border-dark);
+}
+
+.extra-name {
+    color: rgba(255,255,255,0.9);
+    font-size: 16px;
+}
+
+.extra-price {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+/* Notice */
+.notice {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 30px;
+    background: rgba(255,255,255,0.05);
+    border-radius: 15px;
+    border: 1px solid var(--border-dark);
+    text-align: center;
+}
+
+.notice p {
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Contact Grid */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact-card {
+    background: var(--surface-secondary);
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+}
+
+.contact-card h3 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    background: var(--gradient-purple);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.contact-details p {
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.contact-methods {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 25px;
+    background: var(--surface-primary);
+    border-radius: 15px;
+    text-decoration: none;
+    color: var(--text-primary);
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    border: 1px solid var(--border-light);
+}
+
+.contact-method:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+    border-color: var(--primary-blue);
+}
+
+.contact-icon {
+    font-size: 24px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-blue);
+    border-radius: 50%;
+}
+
+.contact-method div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.contact-method strong {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.contact-method span {
+    color: var(--text-secondary);
+    font-size: 16px;
+}
+
+/* Footer */
+.footer {
+    background: var(--surface-dark);
+    color: white;
+    padding: 60px 0 40px;
+    position: relative;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: var(--gradient-blue);
+}
+
+.footer-content {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer-content p {
+    color: rgba(255,255,255,0.8);
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: rgba(255,255,255,0.8);
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+.footer-links a:hover {
+    color: white;
+}
+
+.footer-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--gradient-blue);
+    transition: width 0.3s ease;
+}
+
+.footer-links a:hover::after {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-menu {
+        gap: 20px;
+    }
+    
+    .nav-menu a {
+        font-size: 14px;
+    }
+    
+    .hero-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+    }
+    
+    .hero-title {
+        font-size: 48px;
+    }
+    
+    .hero-subtitle {
+        font-size: 20px;
+    }
+    
+    .section {
+        padding: 80px 0;
+    }
+    
+    .dark-section {
+        padding: 80px 0;
+    }
+    
+    .section-title {
+        font-size: 36px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pricing-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .pricing-card.featured {
+        transform: none;
+    }
+    
+    .contact-methods {
+        gap: 15px;
+    }
+    
+    .contact-method {
+        padding: 20px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-container {
+        padding: 0 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 36px;
+    }
+    
+    .hero-subtitle {
+        font-size: 18px;
+    }
+    
+    .cta-button {
+        padding: 14px 28px;
+        font-size: 16px;
+    }
+    
+    .section-title {
+        font-size: 28px;
+    }
+    
+    .feature-card {
+        padding: 30px 20px;
+    }
+    
+    .pricing-card {
+        padding: 30px 20px;
+    }
+    
+    .price {
+        font-size: 36px;
+    }
+    
+    .contact-card {
+        padding: 30px 20px;
+    }
+    
+    .contact-method {
+        flex-direction: column;
+        text-align: center;
+        gap: 15px;
+    }
+    
+    .contact-method div {
+        align-items: center;
+    }
+}
+
+/* Smooth animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.feature-card,
+.pricing-card,
+.contact-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+/* Glassmorphism effects */
+.nav-bar {
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--surface-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-blue);
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--gradient-purple);
+}
+
+/* Focus states for accessibility */
+.cta-button:focus,
+.contact-method:focus,
+.nav-menu a:focus {
+    outline: 2px solid var(--primary-blue);
+    outline-offset: 2px;
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    :root {
+        --text-secondary: #666666;
+        --border-light: rgba(0,0,0,0.3);
+        --shadow-light: 0 4px 20px rgba(0,0,0,0.2);
+    }
+    
+    .feature-card,
+    .pricing-card,
+    .contact-card {
+        border: 2px solid var(--border-light);
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+    
+    .parallax-image {
+        transform: none !important;
+    }
+    
+    html {
+        scroll-behavior: auto;
+    }
+}</style>
+        </head>
+        <body>
+            
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motorradanhänger Vermietung – Husum</title>
+    <link rel="stylesheet" href="styles.css">
+<link type="text/css" rel="stylesheet" href="css/style.css">
+
+
+    <!-- Navigation -->
+    <nav class="nav-bar scrolled">
+        <div class="nav-container">
+            <div class="logo">
+  <img src="logo.png" alt="TM Verleih Logo" style="height: 40px;">
+</div>
+            <ul class="nav-menu">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#details">Details</a></li>
+                <li><a href="#preise">Preise</a></li>
+                <li><a       href="#galerie">Galerie</a></li>
+                <li><a href="#kontakt">Kontakt</a></li>
+                <li><a href="impressum.html">Impressum</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Parallax -->
+    <section id="hero" class="hero">
+        <div class="hero-content">           
+           <h1 class="hero-title">Motorradanhänger Mieten</h1>
+            <p class="hero-subtitle">100 km/h Zulassung – Platz für 1–2 Motorräder</p>
+            <p class="hero-description">Zuverlässig. Sicher. Professionell.</p>
+            <a href="#details" class="cta-button">Mehr erfahren</a>
+        </div>
+        <div class="hero-image">
+            <img src="anhaenger.jpg" alt="Motorradanhänger" class="parallax-image" style="transform: translateY(281.5px);">
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section id="details" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Modernster Motorradanhänger</h2>
+                <p class="section-subtitle">Perfekt für den sicheren Transport Deines Motorrads</p>
+            </div>      
+            <div class="content-grid">
+                <div class="content-text">
+                    <p>Du suchst einen zuverlässigen Anhänger für den Transport deines Motorrads? Ich vermiete einen praktischen Motorradanhänger mit 100 km/h Zulassung, ideal für den sicheren Transport von 1–2 Motorrädern. Der Anhänger ist ein halbes Jahr alt und verfügt über die neuesten Standards.</p>
+                </div>
+            </div>
+
+            <div class="features-grid">
+                <div class="feature-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon">🚛</div>
+                    <h3>Gesamtgewicht: 750 kg</h3>
+                    <p>Robust und stabil für alle Motorradtypen</p>
+                </div>
+                <div class="feature-card" style="opacity: 1; transform: translateY(0px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon">⚖️</div>
+                    <h3>Nutzlast: 580 kg</h3>
+                    <p>Ausreichend für schwere Maschinen</p>
+                </div>
+                <div class="feature-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon">📏</div>
+                    <h3>Innenmaße: 225 x 130 x 31 cm</h3>
+                    <p>Perfekte Abmessungen für Motorräder</p>
+                </div>
+                <div class="feature-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon">🛞</div>
+                    <h3>Bereifung: 13″</h3>
+                    <p>Hochwertige Reifen für sicheren Transport</p>
+                </div>
+                <div class="feature-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon">🛤️</div>
+                    <h3>Auffahrrampe inklusive</h3>
+                    <p>Einfaches Be- und Entladen</p>
+                </div>
+                <div class="feature-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+                    <div class="feature-icon">🔌</div>
+                    <h3>7- &amp; 13-poliger Stromanschluss</h3>
+                    <p>Kompatibel mit allen Fahrzeugen</p>
+                </div>
+            </div>
+
+            <div class="additional-features">
+                <div class="feature-item">
+                    <span class="checkmark">✅</span>
+                    <span>Deichsel-Verstärkung für mehr Stabilität</span>
+                </div>
+                <div class="feature-item">
+                    <span class="checkmark">✅</span>
+                    <span>Genügend Zurrösen für sichere Befestigung</span>
+                </div>
+                <div class="feature-item">
+                    <span class="checkmark">✅</span>
+                    <span>Spanngurte können auf Anfrage geliehen werden</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dark Mode Pricing Section -->
+    <section id="preise" class="dark-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Faire Preise</h2>
+                <p class="section-subtitle">Transparente Kostenstruktur ohne versteckte Gebühren</p>
+            </div>
+              <div class="pricing-grid">
+    <div class="pricing-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+        <h3>Tagesmiete 12 Std.</h3>
+        <div class="price">20 €</div>
+        <p>max. 12 Std.</p>
+        <div class="price-features">
+            <span>✓ Für TÜV oder Werkstattfahrten</span>
+            <span>✓ Von morgens bis abends</span>
+        </div>
     </div>
-  </header>
 
-  <nav>
-    <div class="container">
-      <ul>
-        <li><a href="#details">Details</a></li>
-        <li><a href="#preise">Preise</a></li>
-        <li><a href="mietbedingungen.html">Mietbedingungen</a></li>
-        <li><a href="#kontakt">Kontakt</a></li>
-        <li><a href="impressum.html">Impressum</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <section id="details" class="container">
-    <h2>Motorradanhänger für bis zu 2 Motorräder</h2>
-    <p>Du suchst einen zuverlässigen Anhänger für den Transport deines Motorrads? Ich vermiete einen praktischen Motorradanhänger mit 100 km/h Zulassung, ideal für den sicheren Transport von 1–2 Motorrädern. Der Anhänger verfügt über die neuesten Standards.</p>
-    <a href="anhaenger.jpg" target="Motorradanhänger Husum Seitenansicht mit einem Motorrad beladen">
-      <img src="anhaenger.jpg" alt="Motorradanhänger" class="main-image" style="width: 100%; max-width: 600px; margin-right: 30px;"/>
-    </a>
-
-    <!-- Bildergalerie -->
-    <h3>Bildergalerie</h3>
-    <div class="gallery">
-      <a href="anhaenger1.jpg" target="Motorradanhänger Husum Heckansicht">
-        <img src="anhaenger1.jpg" alt="Bild 1" style="width: 100%; max-width: 300px; margin-right: 15px;"/>
-      </a>
-
-      <a href="anhaenger2.jpg" target="Motorradanhänger Husum Ansicht von hinten oben">
-        <img src="anhaenger2.jpg" alt="Bild 2" style="width: 100%; max-width: 300px; margin-right: 15px;"/>
-      </a>
-
-      <a href="anhaenger3.jpg" target="Motorradanhänger Husum Ansicht der Deichsel und Stützrad">
-        <img src="anhaenger3.jpg" alt="Bild 3" style="width: 100%; max-width: 300px; margin-right: 15px;"/>
-      </a>
+    <div class="pricing-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+        <h3>Tagesmiete 24 Std.</h3>
+        <div class="price">25 €</div>
+        <p>max. 24 Std.</p>
+        <div class="price-features">
+            <span>✓ Optimal für Überführungsfahrten</span>
+            <span>✓ Flexible Abholung &amp; Rückgabe</span>
+        </div>
     </div>
 
-    <h3>Technische Daten:</h3>
-    <ul class="details-list" style="list-style-type: none; padding-left: 0;">
-      <li>✅ Gesamtgewicht: 750 kg</li>
-      <li>✅ Nutzlast: 580 kg</li>
-      <li>✅ Innenmaße: 225 x 130 x 31 cm</li>
-      <li>✅ Bereifung: 13″</li>
-      <li>✅ Auffahrrampe inklusive</li>
-      <li>✅ 7- & 13-poliger Stromanschluss</li>
-      <li>✅ Deichsel-Verstärkung für mehr Stabilität</li>
-      <li>✅ Genügend Zurrösen für sichere Befestigung</li>
-      <li>✅ Spanngurte auf Anfrage</li>
-    </ul>
-  </section>
+    <div class="pricing-card featured" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+        <div class="popular-badge">Beliebt</div>
+        <h3>Wochenende</h3>
+        <div class="price">50 €</div>
+        <p>Fr-So max. 48 Std.</p>
+        <div class="price-features">
+            <span>✓ Perfekt für Motorradtouren</span>
+            <span>✓ Beste Preis-Leistung</span>
+        </div>
+    </div>
 
-  <section id="preise" class="container">
-    <h2>Mietpreise</h2>
-<table>
-  <tr>
-    <th>Mietdauer</th>
-    <th>Preis*</th>
-  </tr>
-  <tr>
-    <td>Tagesmiete max. 12 Std. (z.B. von 08:00 - 20:00 Uhr)</td>
-    <td>20 €</td>
-  </tr>
-  <tr>
-    <td>Tagesmiete max. 24 Std. (z.B. von 12:00 - 12:00 Uhr)</td>
-    <td>25 €</td>
-  </tr>
-  <tr>
-    <td>Wochenendmiete max. 48 Std. (Fr-So)</td>
-    <td>50 €</td>
-  </tr>
-  <tr>
-    <td>Wochenmiete max. 144 Std. (z.B. Mo-So)</td>
-    <td>120 €</td>
-  </tr>
-  <tr>
-    <td>Wochenmiete max. 24 Std. (jeder weiterer Tag)</td>
-    <td>20 €</td>
-  </tr>
-  <tr>
-    <th colspan=\"2\">Extras</th>
-  </tr>
-  <tr>
-    <td>4x Spanngurte bis 48 Std. Mietdauer</td>
-    <td>5 €</td>
-  </tr>
-  <tr>
-    <td>4x Spanngurte ab 48 Std. Mietdauer</td>
-    <td>0 €</td>
-  </tr>
-</table>
+    <div class="pricing-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+        <h3>Wochenmiete</h3>
+        <div class="price">110 €</div>
+        <p>Mo-So</p>
+        <div class="price-features">
+            <span>✓ Für längere Reisen</span>
+            <span>✓ Maximale Flexibilität</span>
+        </div>
+                </div>
+            </div>
 
-    <p><strong>HINWEIS:</strong> Für die Übergabe des Anhängers muss zwingend ein gültiger Personalausweis vorgelegt werden. Ab einer Mietdauer von 24 Std. werden 50€ Kaution erhoben. 
-  Für individuelle Anfragen kontaktiere mich bitte direkt.</p>
+            <div class="extras-section">
+                <h3>Extras</h3>
+                <div class="extras-grid">
+                    <div class="extra-item">
+                        <span class="extra-name">Spanngurte bis 48 Std.</span>
+                        <span class="extra-price">5 €</span>
+                    </div>
+                    <div class="extra-item">
+                        <span class="extra-name">Spanngurte ab 48 Std.</span>
+                        <span class="extra-price">Kostenlos</span>
+                    </div>
+                </div>
+            </div>
 
-<p style="font-size: 0.8em;"><em>
-  * Die Preise verstehen sich inkl. MwSt. Gemäß § 19 Abs. 1 UStG bin ich nicht umsatzsteuerpflichtig, 
-  daher kann und wird keine Umsatzsteuer ausgewiesen.
-</em></p>
+            <div class="notice">
+                <p><em>HINWEIS: Für die Übergabe des Anhängers muss zwingend ein gültiger Personalausweis vorgelegt werden. 
+                    Für individuelle Anfragen oder Sonderkonditionen kontaktiere mich bitte direkt.</em></p>
+            </div>
+        </div>
+    </section>
+<section id="galerie" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Galerie</h2>
+      <p class="section-subtitle">Weitere Eindrücke vom Anhänger</p>
+    </div>
 
-<p style="font-size: 0.75em; text-align: right; margin-top: -10px;"><em>Preisstand: 05/2025</em></p>
-  </section>
-
-  <section id="kontakt" class="container">
-    <h2>Kontaktinformationen</h2>
-    <p><strong>Tobias Meyer</strong></p>
-    <p>Mühlenweg 32</p>
-    <p>25813 Husum</p>
-
-    <p><strong>Kontakt:</strong></p>
-    <p>E-Mail: <a href="mailto:tobias.m@mail.de">tobias.m@mail.de</a></p>
-    <p>Telefon: <a href="tel:+491702881996">+49 (0) 170 288 1996</a></p>
-    <a aria-label="Chat on WhatsApp" href="https://wa.me/+491702881996">
-<img alt="Chat on WhatsApp" 
-src="IMG_0934.png" 
-/>
-<a /> 
-  </section>
-
-  <section class="container">
-    <h2>Dein Anhängerverleih in Husum, Nordfriesland & Umgebung</h2>
-    <p>TM Verleih bietet einen hochwertigen Motorradanhänger zur Miete – direkt in Husum. Ideal für Kunden aus Nordfriesland, Niebüll, Dithmarschen, Heide, Schleswig, Rendsburg, Flensburg, Eckernförde, Kiel & Umgebung. Jetzt einfach und schnell reservieren!</p>
-  </section>
-
-  <footer>
-    <p>TM Verleih Tobias Meyer, Mühlenweg 32, 25813 Husum | Kontakt: <a href="mailto:tobias.m@mail.de">tobias.m@mail.de</a> | <a href="tel:+491702881996">+49 (0) 170 288 1996</a></p>
-    <p><a href="impressum.html">Impressum</a></p>
-  </footer>
-  <!-- Cookie Banner Start -->
-<div id="cookie-banner" style="position: fixed; bottom: 0; left: 0; right: 0; background: #fff; padding: 20px; box-shadow: 0 -2px 5px rgba(0,0,0,0.2); display: flex; flex-direction: column; align-items: center; font-size: 14px; z-index: 9999;">
-  <p style="margin-bottom: 10px; text-align: center;">
-    Diese Website verwendet Cookies, um Ihnen ein besseres Erlebnis zu bieten. Einige Cookies sind notwendig, andere helfen uns, diese Website und Ihre Erfahrung zu verbessern. Details finden Sie in unserer <a href="impressum.html" style="text-decoration: underline;">Datenschutzerklärung</a>.
-  </p>
-  <div style="display: flex; gap: 10px;">
-    <button onclick="acceptCookies(false)" style="padding: 8px 16px; background-color: #ccc; border: none; border-radius: 4px; cursor: pointer;">Nur notwendige Cookies</button>
-    <button onclick="acceptCookies(true)" style="padding: 8px 16px; background-color: #007BFF; color: #fff; border: none; border-radius: 4px; cursor: pointer;">Alle akzeptieren</button>
+    <div class="gallery-grid">
+      <img src="anhaenger1.jpg" alt="Anhänger Bild 1" class="gallery-image">
+      <img src="anhaenger2.jpg" alt="Anhänger Bild 2" class="gallery-image">
+      <img src="anhaenger3.jpg" alt="Anhänger Bild 3" class="gallery-image">
+      <img src="anhaenger4.jpg" alt="Anhänger Bild 4" class="gallery-image">
+      <img src="anhaenger5.jpg" alt="Anhänger Bild 5" class="gallery-image">
+    </div>
   </div>
+   <section id="bewertungen" class="section">
+  <div class="container">
+    <div class="section-header">
+      <h2 class="section-title">Kundenbewertungen</h2>
+    </div>
+    <!-- Elfsight Google Reviews Widget -->
+    <div class="elfsight-app-919df319-3bf9-429c-bec8-b2b8004aef7d" data-elfsight-app-lazy></div>
+  </div>
+</section>          
+    <!-- Contact Section -->
+    <section id="kontakt" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Kontakt</h2>
+                <p class="section-subtitle">Reservierung und Anfragen</p>
+            </div>
+            
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-card" style="opacity: 0; transform: translateY(20px); transition: opacity 0.6s, transform 0.6s;">
+                        <h3>Tobias Meyer</h3>
+                        <div class="contact-details">
+                            <p>Mühlenweg 32</p>
+                            <p>25813 Husum</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-methods">
+                        <a href="mailto:tobias.m@mail.de" class="contact-method">
+                            <div class="contact-icon">  📧</div>
+                            <div>
+                                <strong>E-Mail</strong>
+                                <span>tobias.m@mail.de</span>
+                            </div>
+                        </a>
+                        
+                        <a href="tel:+491702881996" class="contact-method">
+                            <div class="contact-icon">📞</div>
+                            <div>
+                                <strong>Telefon</strong>
+                                <span>+49 (0) 170 288 1996</span>
+                            </div>
+                        </a>
+
+                        <a href="https://wa.me/+491702881996" class="contact-method">
+                            <div class="contact-icon">💬</div>
+                            <div>
+                                <strong>WhatsApp</strong>
+                                <span>+49 (0) 170 288 1996</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>Tobias Meyer TM Verleih, Mühlenweg 32, 25813 Husum</p>
+                <div class="footer-links">
+                    <a href="mailto:tobias.m@mail.de">tobias.m@mail.de</a>
+                    <a href="tel:+491702881996">+49 (0) 170 288 1996</a>
+                    <a href="impressum.html">Impressum</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Parallax effect
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const parallaxImage = document.querySelector('.parallax-image');
+            if (parallaxImage) {
+                parallaxImage.style.transform = `translateY(${scrolled * 0.5}px)`;
+            }
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', () => {
+            const navbar = document.querySelector('.nav-bar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Fade in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.feature-card, .pricing-card, .contact-card').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+    </script>
+<script type="text/javascript" src="js/script.js"></script>
+
+
+            <script></script>
+        
+    
+  </body>
+<div id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 10px; z-index: 9999; display: none; max-width: 450px; margin: 0 auto;">
+  <p style="margin-bottom: 15px; font-size: 14px; color: #333;">
+    Diese Website verwendet Cookies. Technisch notwendige Cookies sind für den Betrieb erforderlich. Google Analytics wird nur mit Ihrer Zustimmung aktiviert. 
+    <a href="impressum.html" style="color: var(--primary-blue); text-decoration: underline;">Mehr erfahren</a>.
+  </p>
+  <button id="accept-cookies" class="cta-button" style="margin-right: 10px;">Zustimmen</button>
+  <button id="decline-cookies" class="cta-button" style="background: #ccc; color: #000;">Ablehnen</button>
 </div>
 
 <script>
-// Funktion zur Cookie-Zustimmung
-function acceptCookies(all) {
-    localStorage.setItem('cookieConsent', all ? 'all' : 'necessary');
-    document.getElementById('cookie-banner').style.display = 'none';
-    if (all) {
-        loadAnalytics();
+  document.addEventListener("DOMContentLoaded", function () {
+    if (!localStorage.getItem("cookieConsent")) {
+      document.getElementById("cookie-banner").style.display = "block";
     }
-}
 
-// Wenn schon Zustimmung vorhanden, Banner ausblenden und ggf. Analytics laden
-window.addEventListener('DOMContentLoaded', function() {
-    const consent = localStorage.getItem('cookieConsent');
-    if (consent) {
-        document.getElementById('cookie-banner').style.display = 'none';
-        if (consent === 'all') {
-            loadAnalytics();
-        }
-    }
-});
+    document.getElementById("accept-cookies").addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", "accepted");
+      document.getElementById("cookie-banner").style.display = "none";
 
-// Funktion zum Laden von Google Analytics
-function loadAnalytics() {
-    var script = document.createElement('script');
-    script.src = "https://www.googletagmanager.com/gtag/js?id=G-ZDK3EKE0PT"; 
-    script.async = true;
-    document.head.appendChild(script);
+      // Google Analytics laden
+      const gaScript = document.createElement('script');
+      gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZDK3EKE0PT";
+      gaScript.async = true;
+      document.head.appendChild(gaScript);
 
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-ZDK3EKE0PT'); 
-}
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-ZDK3EKE0PT');
+    });
+
+    document.getElementById("decline-cookies").addEventListener("click", function () {
+      localStorage.setItem("cookieConsent", "declined");
+      document.getElementById("cookie-banner").style.display = "none";
+    });
+  });
 </script>
-<!-- Cookie Banner Ende -->
-</body>
-</html>
