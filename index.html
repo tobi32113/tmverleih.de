@@ -1136,6 +1136,48 @@ html {
             </div>
         </div>
     </footer>
+    <!-- Cookie-Banner (korrekt innerhalb des Body) -->
+  <div id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 10px; z-index: 9999; display: none; max-width: 450px; margin: 0 auto;">
+    <p style="margin-bottom: 15px; font-size: 14px; color: #333;">
+      Diese Website verwendet Cookies. Technisch notwendige Cookies sind für den Betrieb erforderlich. Google Analytics wird nur mit Ihrer Zustimmung aktiviert. 
+      <a href="impressum.html" style="color: var(--primary-blue); text-decoration: underline;">Mehr erfahren</a>.
+    </p>
+    <button id="accept-cookies" class="cta-button" style="margin-right: 10px;">Zustimmen</button>
+    <button id="decline-cookies" class="cta-button" style="background: #ccc; color: #000;">Ablehnen</button>
+  </div>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      if (!localStorage.getItem("cookieConsent")) {
+        document.getElementById("cookie-banner").style.display = "block";
+      }
+
+      document.getElementById("accept-cookies").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "accepted");
+        document.getElementById("cookie-banner").style.display = "none";
+
+        const gaScript = document.createElement('script');
+        gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZDK3EKE0PT";
+        gaScript.async = true;
+        document.head.appendChild(gaScript);
+
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-ZDK3EKE0PT');
+      });
+
+      document.getElementById("decline-cookies").addEventListener("click", function () {
+        localStorage.setItem("cookieConsent", "declined");
+        document.getElementById("cookie-banner").style.display = "none";
+      });
+    });
+  </script>
+
+  <!-- Weitere Scripts wie Parallax, Scroll etc. -->
+  <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
     <script>
         // Smooth scrolling for navigation links
         document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -1197,40 +1239,4 @@ html {
 
             <script></script>
   </body>
-<div id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 10px; z-index: 9999; display: none; max-width: 450px; margin: 0 auto;">
-  <p style="margin-bottom: 15px; font-size: 14px; color: #333;">
-    Diese Website verwendet Cookies. Technisch notwendige Cookies sind für den Betrieb erforderlich. Google Analytics wird nur mit Ihrer Zustimmung aktiviert. 
-    <a href="impressum.html" style="color: var(--primary-blue); text-decoration: underline;">Mehr erfahren</a>.
-  </p>
-  <button id="accept-cookies" class="cta-button" style="margin-right: 10px;">Zustimmen</button>
-  <button id="decline-cookies" class="cta-button" style="background: #ccc; color: #000;">Ablehnen</button>
-</div>
-
-<script>
-  document.addEventListener("DOMContentLoaded", function () {
-    if (!localStorage.getItem("cookieConsent")) {
-      document.getElementById("cookie-banner").style.display = "block";
-    }
-
-    document.getElementById("accept-cookies").addEventListener("click", function () {
-      localStorage.setItem("cookieConsent", "accepted");
-      document.getElementById("cookie-banner").style.display = "none";
-
-      // Google Analytics laden
-      const gaScript = document.createElement('script');
-      gaScript.src = "https://www.googletagmanager.com/gtag/js?id=G-ZDK3EKE0PT";
-      gaScript.async = true;
-      document.head.appendChild(gaScript);
-
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-ZDK3EKE0PT');
-    });
-
-    document.getElementById("decline-cookies").addEventListener("click", function () {
-      localStorage.setItem("cookieConsent", "declined");
-      document.getElementById("cookie-banner").style.display = "none";
-    });
-  });
 </script>
