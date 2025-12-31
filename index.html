@@ -376,6 +376,25 @@ html {
 .feature-item:hover {
     background: var(--surface-primary);
     box-shadow: var(--shadow-light);
+
+}
+
+.feature-item-black {
+    display: flex;
+    align-items: center;      
+    gap: 15px;
+    padding: 20px;
+    background: var(--surface-dark-elevated);
+    border: 1px solid var(--border-dark);
+    border-radius: 15px;
+    font-size: 16px;
+    text-align: left;        
+    transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+    background: var(--surface-primary);
+    box-shadow: var(--shadow-light); 
 }
 
 .checkmark {
@@ -967,15 +986,15 @@ html {
             </div>
 
             <div class="additional-features">
-                <div class="extra-item">
+                <div class="feature-item-black">
                     <span class="checkmark">✅</span>
                     <span>Deichsel-Verstärkung für mehr Stabilität</span>
                 </div>
-                <div class="extra-item">
+                <div class="feature-item-black">
                     <span class="checkmark">✅</span>
                     <span>Genügend Zurrösen für sichere Befestigung</span>
                 </div>
-                <div class="extra-item">
+                <div class="feature-item-black">
                     <span class="checkmark">✅</span>
                     <span>Spanngurte können auf Anfrage geliehen werden</span>
                 </div>
