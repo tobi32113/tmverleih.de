@@ -912,22 +912,29 @@ html {
 
 
     <!-- Navigation -->
-    <nav class="nav-bar scrolled">
-        <div class="nav-container">
-            <div class="logo">
-  <img src="logo.png" alt="TM Verleih Logo" style="height: 40px;">
-</div>
-            <ul class="nav-menu">
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#Motorradanhänger">Motorradanhänger</a></li>
-                <li><a href="#Planenanhänger">Planenanhänger</a></li>
-                <li><a href="#preise">Preise</a></li>
-                <li><a       href="#galerie">Galerie</a></li>
-                <li><a href="#kontakt">Kontakt</a></li>
-                <li><a href="impressum.html">Impressum</a></li>
-            </ul>
+   <nav class="nav-bar scrolled">
+    <div class="nav-container" style="display: flex; justify-content: space-between; align-items: center; width: 100%;">
+        <div class="logo">
+            <img src="logo.png" alt="TM Verleih Logo" style="height: 40px;">
         </div>
-    </nav>
+        
+        <div class="hamburger" id="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        
+        <ul class="nav-menu" id="nav-menu">
+            <li><a href="#hero" class="nav-link">Home</a></li>
+            <li><a href="#Motorradanhänger" class="nav-link">Motorradanhänger</a></li>
+            <li><a href="#Planenanhänger" class="nav-link">Planenanhänger</a></li>
+            <li><a href="#preise" class="nav-link">Preise</a></li>
+            <li><a href="#galerie" class="nav-link">Galerie</a></li>
+            <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
+            <li><a href="impressum.html" class="nav-link">Impressum</a></li>
+        </ul>
+    </div>
+</nav>
 
     <!-- Hero Section with Parallax -->
     <section id="hero" class="hero">
