@@ -1159,3 +1159,13 @@ body {
 #faq .feature-item {
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
+
+/* NAV RESET – Desktop Menü komplett deaktivieren */
+.nav-menu {
+    display: none !important;
+}
+
+/* Nur wenn aktiv → anzeigen */
+.nav-menu.active {
+    display: flex !important;
+}
