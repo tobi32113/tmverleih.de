@@ -996,3 +996,64 @@ html, body {
     transform: translateY(-2px);
     box-shadow: var(--shadow-heavy);
 }
+
+<style>
+    /* Basis-Styling für den PC (Burger ist versteckt) */
+    .hamburger {
+        display: none;
+        cursor: pointer;
+    }
+
+    .hamburger .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        transition: all 0.3s ease-in-out;
+        background-color: #333; /* Farbe der Striche, z.B. dunkelgrau */
+    }
+
+    /* Mobile Ansicht: Sobald der Bildschirm schmaler als 992px ist */
+    @media (max-width: 992px) {
+        .hamburger {
+            display: block; /* Burger-Icon anzeigen */
+        }
+
+        /* Animation für das Burger-Icon (wird zum X) */
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+        /* Das versteckte Menü-Layout für Mobile */
+        .nav-menu {
+            position: fixed;
+            left: -100%; /* Versteckt es links außerhalb des Bildschirms */
+            top: 60px; /* Höhe deiner Navbar anpassen, falls nötig */
+            flex-direction: column;
+            background-color: #f9f8f6; /* Hintergrundfarbe wie auf deinem Screenshot */
+            width: 100%;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+            padding: 20px 0;
+            z-index: 1000;
+            margin: 0;
+        }
+
+        /* Die Klasse, die per Klick hinzugefügt wird, um das Menü zu zeigen */
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-menu li {
+            margin: 15px 0;
+            list-style: none; /* Versteckt die Spiegelstriche */
+        }
+    }
+</style>
