@@ -1130,3 +1130,27 @@ body {
         display: none !important;
     }
 }
+
+/* FAQ Fix (Dark Mode korrekt darstellen) */
+#faq .feature-item {
+    background: var(--surface-dark-elevated);
+    border: 1px solid var(--border-dark);
+    color: white;
+}
+
+#faq .feature-item strong {
+    color: white;
+}
+
+#faq .feature-item span {
+    color: rgba(255,255,255,0.9);
+}
+
+#faq .feature-item:hover {
+    background: #3a3a3c;
+}
+
+/* Subtitle im FAQ heller machen */
+#faq .section-subtitle {
+    color: rgba(255,255,255,0.8);
+}
