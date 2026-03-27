@@ -1455,5 +1455,26 @@ html {
         });
     </script>
     <script type="text/javascript" src="js/script.js"></script>
+<script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const hamburger = document.getElementById("hamburger");
+            const navMenu = document.getElementById("nav-menu");
+            const navLinks = document.querySelectorAll(".nav-link");
+
+            // Klick auf Burger öffnet/schließt das Menü
+            hamburger.addEventListener("click", () => {
+                hamburger.classList.toggle("active");
+                navMenu.classList.toggle("active");
+            });
+
+            // Klick auf einen Menüpunkt schließt das Menü automatisch wieder
+            navLinks.forEach(link => link.addEventListener("click", () => {
+                hamburger.classList.remove("active");
+                navMenu.classList.remove("active");
+            }));
+        });
+    </script>
+</body>
+</html>
 </body>
 </html>
