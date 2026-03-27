@@ -165,7 +165,6 @@ body {
     text-decoration: none;
     color: var(--text-primary);
     transition: background 0.3s ease, color 0.3s ease;
-    position: relative;
 }
 
 .nav-menu a:hover {
@@ -1002,14 +1001,6 @@ body {
     list-style: none;
     width: 100%;
     margin: 0;
-}
-
-.nav-menu a {
-    display: block;
-    width: 100%;
-    padding: 14px 20px;
-    text-align: left;
-    font-size: 16px;
 }
 
     .hero-content {
