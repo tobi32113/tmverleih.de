@@ -392,6 +392,21 @@ body {
 
 .feature-item,
 .feature-item-black {
+    .dark-section .feature-item {
+    background: var(--surface-dark-elevated);
+    border: 1px solid var(--border-dark);
+    color: white;
+}
+
+.dark-section .feature-item:hover {
+    background: #3a3a3c;
+    box-shadow: var(--shadow-light);
+}
+
+.dark-section .feature-item strong,
+.dark-section .feature-item span {
+    color: white;
+}
     display: flex;
     align-items: center;
     gap: 15px;
