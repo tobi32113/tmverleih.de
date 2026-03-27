@@ -1154,3 +1154,7 @@ body {
 #faq .section-subtitle {
     color: rgba(255,255,255,0.8);
 }
+
+#faq .feature-item {
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+}
