@@ -217,11 +217,12 @@ body {
         padding: 0 15px;
     }
 
-    .nav-bar .logo img {
-        height: 36px !important;
-        max-height: 36px !important;
-        max-width: 150px;
-    }
+.nav-bar .logo img {
+    height: 42px !important;
+    max-height: 42px !important;
+    width: auto !important;
+    max-width: 180px;
+}
 
     .nav-menu {
         top: 74px;
@@ -261,7 +262,7 @@ body {
     position: relative;
     background: url('anhaenger.jpg') center center / cover no-repeat;
     overflow: hidden;
-    padding-top: 70px;
+    padding-top: 72px;
 }
 
 .hero::before {
