@@ -1170,7 +1170,7 @@ html {
   </div>
 </section>
     <!-- Contact Section -->
-    <section id="kontakt" class="section" style="padding-top: 20px; padding-bottom: 0px; margin-bottom: 0px;">
+    <section id="kontakt" class="section">
         <div class="container">
             <div class="section-header">
                 <h2 class="section-title">Kontakt</h2>
@@ -1319,10 +1319,12 @@ html {
         </div> 
     </section> 
     
-    <footer class="footer" style="margin-top: 0 !important;">
+    </section> 
+
+    <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <p style="margin-top: 0 !important;">tmverleih Inh. Tobias Meyer, Mühlenweg 32, 25813 Husum</p>
+                <p>tmverleih Inh. Tobias Meyer, Mühlenweg 32, 25813 Husum</p>
                 <div class="footer-links">
                     <a href="mailto:tmverleih@mail.de">tmverleih@mail.de</a>
                     <a href="tel:+491702881996">+49 (0) 170 288 1996</a>
@@ -1331,6 +1333,28 @@ html {
             </div>
         </div>
     </footer>
+
+    <style>
+        /* Verhindert Standard-Abstände vom Browser */
+        html, body {
+            margin: 0;
+            padding: 0;
+            min-height: 100vh; /* Mindestens 100% der Bildschirmhöhe */
+        }
+        
+        /* Macht den Body flexibel */
+        body {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        /* Drückt den Footer unerbittlich ans untere Ende */
+        .footer {
+            margin-top: auto !important; 
+            margin-bottom: 0 !important;
+            width: 100%;
+        }
+    </style>
 
     <div id="cookie-banner" style="position: fixed; bottom: 20px; left: 20px; right: 20px; background: #fff; padding: 20px; box-shadow: 0 0 10px rgba(0,0,0,0.2); border-radius: 10px; z-index: 9999; display: none; max-width: 450px; margin: 0 auto;">
         <p style="margin-bottom: 15px; font-size: 14px; color: #333;">
