@@ -1056,4 +1056,10 @@ html, body {
             list-style: none; /* Versteckt die Spiegelstriche */
         }
     }
+/* Zwingt den Burger auf großen Bildschirmen (PC) in die Unsichtbarkeit */
+    @media (min-width: 993px) {
+        .hamburger {
+            display: none !important;
+        }
+    }
 </style>
