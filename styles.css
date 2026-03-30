@@ -1159,43 +1159,48 @@ body {
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
 
-/* Verfügbarkeit */
-#verfuegbarkeit .section-header {
-    margin-bottom: 50px;
+/* Verfügbarkeit passend zum Anfrageformular */
+#verfuegbarkeit {
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
-.availability-card {
-    max-width: 900px;
-    margin: 0 auto;
+#verfuegbarkeit .availability-header {
+    margin-bottom: 40px;
+}
+
+#verfuegbarkeit .availability-box {
+    max-width: 760px;
+    margin: 0 auto 30px auto;
     background: var(--surface-primary);
+    padding: 40px;
     border-radius: 20px;
     box-shadow: var(--shadow-light);
     border: 1px solid var(--border-light);
-    padding: 28px;
-    overflow: hidden;
 }
 
-.availability-legend {
+#verfuegbarkeit .availability-legend {
     display: flex;
     justify-content: center;
     margin-bottom: 24px;
 }
 
-.availability-legend-item {
+#verfuegbarkeit .availability-legend-item {
     display: inline-flex;
     align-items: center;
     gap: 12px;
+    padding: 12px 18px;
     background: var(--surface-secondary);
     border: 1px solid var(--border-light);
     border-radius: 999px;
-    padding: 12px 18px;
     color: var(--text-primary);
     font-size: 16px;
     font-weight: 500;
+    line-height: 1.4;
     text-align: center;
 }
 
-.availability-dot {
+#verfuegbarkeit .availability-dot {
     width: 14px;
     height: 14px;
     border-radius: 4px;
@@ -1203,50 +1208,56 @@ body {
     flex-shrink: 0;
 }
 
-.availability-calendar {
+#verfuegbarkeit .availability-calendar {
     border-radius: 16px;
     overflow: hidden;
     border: 1px solid var(--border-light);
     background: var(--surface-secondary);
 }
 
-.availability-calendar iframe {
+#verfuegbarkeit .availability-calendar iframe {
     display: block;
     width: 100%;
     height: 700px;
     border: 0;
 }
 
-.availability-note {
-    max-width: 900px;
-    margin: 22px auto 0;
+#verfuegbarkeit .availability-note {
+    margin-top: 20px;
     text-align: center;
-    font-size: 18px;
     color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+#verfuegbarkeit #anfrageformular {
+    margin-top: 30px;
 }
 
 /* Mobil */
 @media (max-width: 768px) {
-    .availability-card {
-        padding: 18px;
-        border-radius: 18px;
+    #verfuegbarkeit {
+        padding-top: 40px;
+        padding-bottom: 30px;
     }
 
-    .availability-legend-item {
+    #verfuegbarkeit .availability-box {
+        padding: 24px 20px;
+    }
+
+    #verfuegbarkeit .availability-legend-item {
         width: 100%;
         justify-content: center;
         border-radius: 14px;
         padding: 14px 16px;
         font-size: 15px;
-        line-height: 1.4;
     }
 
-    .availability-calendar iframe {
+    #verfuegbarkeit .availability-calendar iframe {
         height: 500px;
     }
 
-    .availability-note {
-        font-size: 16px;
-        padding: 0 10px;
+    #verfuegbarkeit .availability-note {
+        font-size: 15px;
     }
 }
