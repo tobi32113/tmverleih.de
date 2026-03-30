@@ -1158,3 +1158,104 @@ body {
 #faq .feature-item {
     box-shadow: 0 4px 20px rgba(0,0,0,0.3);
 }
+
+.availability-section {
+  padding: 60px 20px;
+  background: #f8f9fa;
+}
+
+.availability-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.availability-container h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #1f2a44;
+}
+
+.availability-container p {
+  text-align: center;
+  color: #555;
+  font-size: 1.05rem;
+  margin-bottom: 25px;
+}
+
+.availability-legend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: #ffffff;
+  padding: 12px 18px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  font-size: 1rem;
+  color: #333;
+}
+
+.legend-color {
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-radius: 4px;
+}
+
+.legend-red {
+  background: #d93025;
+}
+
+.legend-blue {
+  background: #1a73e8;
+}
+
+.calendar-wrapper {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.calendar-wrapper iframe {
+  width: 100%;
+  height: 700px;
+  border: 0;
+  display: block;
+}
+
+.availability-note {
+  margin-top: 18px;
+  margin-bottom: 0;
+  font-size: 0.95rem;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .availability-section {
+    padding: 40px 15px;
+  }
+
+  .availability-container h2 {
+    font-size: 1.7rem;
+  }
+
+  .calendar-wrapper iframe {
+    height: 500px;
+  }
+
+  .legend-item {
+    font-size: 0.95rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
