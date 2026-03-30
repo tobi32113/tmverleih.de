@@ -1443,14 +1443,14 @@ body {
     </div>
 </section>
 
-<section id="verfuegbarkeit" class="section section-tight-top">
+<section id="verfuegbarkeit" class="section section-tight-top section-tight-bottom">
     <div class="container">
-        <div class="section-header">
+        <div class="section-header availability-header">
             <h2 class="section-title">Verfügbarkeit</h2>
             <p class="section-subtitle">Wann sind unsere Anhänger bereits vermietet?</p>
         </div>
 
-        <div class="availability-card">
+        <div class="availability-box">
             <div class="availability-legend">
                 <div class="availability-legend-item">
                     <span class="availability-dot"></span>
@@ -1466,80 +1466,73 @@ body {
                     scrolling="no">
                 </iframe>
             </div>
+
+            <p class="availability-note">
+                Freie Termine gerne telefonisch, per E-Mail oder per WhatsApp anfragen.
+            </p>
         </div>
 
-        <p class="availability-note">
-            Freie Termine gerne telefonisch, per Mail oder per WhatsApp anfragen.
-        </p>
+        <section id="anfrageformular">
+            <h2>Unverbindlich anfragen</h2>
+
+            <form id="contactForm">
+                <input type="hidden" name="access_key" value="aca50faf-c2d8-42f2-a165-61a865f7732b">
+
+                <div class="form-group">
+                    <label>Name *</label>
+                    <input type="text" name="name" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Telefonnummer *</label>
+                    <input type="tel" name="telefon" required>
+                </div>
+
+                <div class="form-group">
+                    <label>E-Mail *</label>
+                    <input type="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mietdatum von *</label>
+                    <input type="date" id="date_from" name="mietdatum_von" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Mietdatum bis *</label>
+                    <input type="date" id="date_to" name="mietdatum_bis" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Anhänger auswählen *</label>
+                    <select name="anhaenger" id="anhaengerSelect" required>
+                        <option value="">Bitte auswählen</option>
+                        <option value="Motorradanhänger">Motorradanhänger</option>
+                        <option value="Planenanhänger">Planenanhänger</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label>Nachricht</label>
+                    <textarea name="message" rows="4"></textarea>
+                </div>
+
+                <input type="checkbox" name="botcheck" style="display:none;">
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required>
+                        Ich habe die <a href="/impressum.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.
+                    </label>
+                </div>
+
+                <button type="submit">Anfrage senden</button>
+
+                <div id="formMessage" style="display:none;margin-top:20px;font-weight:600;"></div>
+            </form>
+        </section>
     </div>
-</section>          
-    <!-- Contact Section -->
-    <section id="kontakt" class="section section-tight-top">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Anhänger in Husum anfragen</h2>
-                  <p class="section-subtitle">Reservierung für Motorradanhänger oder Planenanhänger</p>
-            </div>
-            
-            <section id="anfrageformular">
-                <h2>Unverbindlich anfragen</h2>
-
-                <form id="contactForm">
-                    <input type="hidden" name="access_key" value="aca50faf-c2d8-42f2-a165-61a865f7732b">
-
-                    <div class="form-group">
-                        <label>Name *</label>
-                        <input type="text" name="name" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Telefonnummer *</label>
-                        <input type="tel" name="telefon" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>E-Mail *</label>
-                        <input type="email" name="email" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Mietdatum von *</label>
-                        <input type="date" id="date_from" name="mietdatum_von" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Mietdatum bis *</label>
-                        <input type="date" id="date_to" name="mietdatum_bis" required>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Anhänger auswählen *</label>
-                        <select name="anhaenger" id="anhaengerSelect" required>
-                            <option value="">Bitte auswählen</option>
-                            <option value="Motorradanhänger">Motorradanhänger</option>
-                            <option value="Planenanhänger">Planenanhänger</option>
-                        </select>
-                    </div>
-
-                    <div class="form-group">
-                        <label>Nachricht</label>
-                        <textarea name="message" rows="4"></textarea>
-                    </div>
-
-                    <input type="checkbox" name="botcheck" style="display:none;">
-
-                    <div class="form-group">
-                        <label>
-                            <input type="checkbox" required>
-                            Ich habe die <a href="/impressum.html" target="_blank">Datenschutzerklärung</a> gelesen und stimme der Verarbeitung meiner Daten zur Bearbeitung meiner Anfrage zu.
-                        </label>
-                    </div>
-
-                    <button type="submit">Anfrage senden</button>
-
-                    <div id="formMessage" style="display:none;margin-top:20px;font-weight:600;"></div>
-                </form>
-            </section>
+</section>
 
             <script>
                 const form = document.getElementById("contactForm");
