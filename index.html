@@ -830,6 +830,82 @@ body {
     text-decoration: underline;
 }
 
+/* Kalender */
+.calendar-section {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.calendar-wrapper {
+    max-width: 900px;
+    margin: 0 auto 70px auto;
+    background: var(--surface-primary);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: var(--shadow-light);
+    border: 1px solid var(--border-light);
+}
+
+.calendar-wrapper h2 {
+    text-align: center;
+    margin-bottom: 14px;
+    font-size: 30px;
+    font-weight: 600;
+    background: var(--gradient-blue);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.calendar-wrapper p {
+    text-align: center;
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-bottom: 28px;
+}
+
+.calendar-embed {
+    width: 100%;
+    border-radius: 16px;
+    overflow: hidden;
+    border: 1px solid var(--border-light);
+    background: var(--surface-secondary);
+    box-shadow: inset 0 1px 0 rgba(255,255,255,0.6);
+}
+
+.calendar-embed iframe {
+    display: block;
+    width: 100%;
+    height: 650px;
+    border: 0;
+}
+
+/* Responsive Kalender */
+@media (max-width: 768px) {
+    .calendar-wrapper {
+        padding: 25px 20px;
+        margin: 0 auto 50px auto;
+    }
+
+    .calendar-wrapper h2 {
+        font-size: 24px;
+    }
+
+    .calendar-wrapper p {
+        font-size: 16px;
+    }
+
+    .calendar-embed iframe {
+        height: 500px;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-embed iframe {
+        height: 420px;
+    }
+}               
+               
 /* Burger-Menü */
 .hamburger {
     display: none;
@@ -1153,6 +1229,7 @@ body {
     <li><a href="#preise" class="nav-link">Preise</a></li>
     <li><a href="#galerie" class="nav-link">Galerie</a></li>
     <li><a href="#faq" class="nav-link">FAQ</a></li>
+    <li><a href="#kalender" class="nav-link">Verfügbarkeit</a></li>
     <li><a href="#kontakt" class="nav-link">Kontakt</a></li>
     <li><a href="impressum.html" class="nav-link">Impressum</a></li>
 </ul>
@@ -1438,6 +1515,24 @@ body {
             <div class="feature-item">
                 <span class="checkmark">✅</span>
                 <span><strong>Was muss ich zur Übergabe mitbringen?</strong><br>Für die Übergabe ist ein gültiger Personalausweis erforderlich.</span>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Verfügbarkeit -->           
+<section id="kalender" class="section calendar-section">
+    <div class="container">
+        <div class="calendar-wrapper">
+            <h2>Verfügbarkeit prüfen</h2>
+            <p>Hier kannst du direkt die aktuelle Verfügbarkeit des Anhängers einsehen.</p>
+
+            <div class="calendar-embed">
+                <iframe 
+                    src="https://calendar.google.com/calendar/embed?src=tmverleih%40mail.de&ctz=Europe%2FBerlin"
+                    title="Google Kalender TM Verleih"
+                    loading="lazy"
+                    scrolling="no">
+                </iframe>
             </div>
         </div>
     </div>
